@@ -17,7 +17,7 @@ else:
     third_digit = (number_on_the_ticket - first_digit * 100000 - second_digit * 10000) // 1000
     fourth_digit = (number_on_the_ticket - first_digit * 100000 - second_digit * 10000 - third_digit * 1000) // 100
     fifth_digit = (number_on_the_ticket - first_digit * 100000 - second_digit * 10000
-                   - third_digit * 1000 - fourth_digit * 100) // 10
+                    - third_digit * 1000 - fourth_digit * 100) // 10
     sixth_digit = number_on_the_ticket % 10
     if first_digit + second_digit + third_digit == fourth_digit + fifth_digit + sixth_digit:
         print('Your ticket is lucky!')
